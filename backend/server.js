@@ -20,7 +20,7 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.use(express.json({ limit: "10mb" }));
 app.use(cookieParser());
