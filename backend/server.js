@@ -1,16 +1,18 @@
-// src/index.js
 import express from "express";
-import path from "path";
-import { fileURLToPath } from "url";
-
+import dotenv from "dotenv";
 import authRoutes from "./routes/auth.route.js";
 import { connectDB } from "./lib/db.js";
 import cookieParser from "cookie-parser";
-import productRoutes from "./routes/product.route.js";
-import cartRoutes from "./routes/cart.route.js";
+import productRoutes from"./routes/product.route.js";
+import cartRoutes from "./routes/cart.rout.js"
 import couponRoutes from "./routes/coupon.route.js";
 import paymentRoutes from "./routes/payment.route.js";
 import analyticsRoutes from "./routes/analytics.route.js";
+
+import path from "path";
+import { fileURLToPath } from "url";
+
+
 
 const app = express();
 
